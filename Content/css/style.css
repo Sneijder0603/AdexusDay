@@ -1,0 +1,1563 @@
+/***************************************
+Theme Name: UI TAYLOR BY GMD
+Author: Paulo Vicente, Adriana Salazar, Diego Guadalupe
+Version: 2.0
+UX GMD
+/**************************************/
+
+/******************************
+/*----IMPORT-----*/
+/*******************************/
+@import url(../bootstrap/css/bootstrap.css);
+@import url(../font-awesome/font-awesome.css);
+@import url(jquery.mCustomScrollbar.css);
+
+/******************************
+/*----GLOBAL*/
+/*******************************/
+html, body {
+	width: 100%;     
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+}
+
+
+ul {
+	
+}
+
+li {
+	
+	padding: 0px;
+	margin:0px
+}
+
+p {	
+	padding: 0px;
+}
+
+img {
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+	border: 0px;
+}
+
+input, textarea {
+	padding: 0px;
+	margin: 0px;
+	outline: 0 none;
+	font-family: Arial, Helvetica;
+	color: #666;
+}
+
+span {
+	padding: 0px;
+	margin: 0px;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+a {
+	outline: none !important;
+}
+
+*, 
+*:focus,
+*:active, 
+*:hover, 
+a, 
+a:active,
+a:selected,
+a:visited,
+button:focus,
+button{
+	border: none;
+    outline: none;
+    outline: 0;
+}
+
+body.loading:after{
+	content:'';
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:#2a2a2c;
+	opacity:.95;
+	top:0px;
+	left:0px;
+	z-index:9999;
+}
+
+body.loading:before{
+	content:'';
+	background:url('../images/system/loading.gif') no-repeat;
+	width:45px;
+	height:45px;
+	position:fixed;
+	left:50%;
+	margin-left:-22px;
+	top:300px;
+	z-index:99999;
+}
+
+/********************************
+/*----LAYOUT*/
+/*******************************/
+
+.wrap-content {
+  	display: block;
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	right: 0px;
+	bottom: 50px;
+	z-index: 100;
+	-webkit-box-shadow: -7px 0px 32px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: -7px 0px 32px -7px rgba(0,0,0,0.75);
+	box-shadow: -7px 0px 32px -7px rgba(0,0,0,0.75);
+}
+
+.pull-main-content{
+	/*padding-left:58px;*/
+	overflow:hidden;
+}
+.pull-main-content .main-content{
+	background: #f8f8f8;
+    /*position: relative;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.pull-main-content .content-body {
+  padding: 0px;
+  min-height: 500px;
+}
+
+/*----header*/
+/*******************************/
+
+.line-corp {
+	height: 2px;
+	background: #ff7800;
+}
+
+.header{
+	height: 60px;
+	color: #6d747a;
+	background: #f8f8f8;
+	width: 100%;
+	position: relative;
+	z-index:100;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(153,153,153,1);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(153,153,153,1);
+	box-shadow: 0px 0px 2px 0px rgba(153,153,153,1);
+}
+
+.logo{
+	display:block;
+}
+
+.menu .logo{
+	display:block;
+	height: 63px;
+	background: url('../../Content/images/system/logo_adexus.png') 15px 16px no-repeat;
+}
+
+.header h1{
+	float: left;
+	margin: 13px;	
+	font-weight: bold;
+	color: #676767;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 18px;
+}
+
+.breadcrumbs {
+	padding: 0px 0px 15px 0px;
+}
+
+.breadcrumbs span{
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.breadcrumbs span.active-view {
+	color: #00ade7;
+	font-size: 12px;
+}
+
+.breadcrumbs span.nivel-bread {
+	color: #00ade7;
+	font-size: 12px;
+}
+
+header.header .btn-show {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-right: 1px solid #eaedf0;
+	background: url('../../Content/images/system/sprite_adexus.png') 1px -60px no-repeat;
+	cursor: pointer;
+}
+
+header.header .btn-show.active {
+	background: url('../../Content/images/system/sprite_adexus.png') 1px 0px no-repeat;
+}
+
+
+.corporativo div {
+	vertical-align: top;
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+}
+
+.corporativo .logo-app {
+	margin-left: 15px;
+	width: 144px;
+	height: 60px;
+	background: url('../../Content/images/system/adexus.png') 0px 15px no-repeat;
+}
+
+.user-name {	
+	float: left;
+	border-left: 1px solid #eaedf0 !important;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding: 0px 56px 0px 58px;
+	position: relative;
+	border:none;
+	background: transparent;
+}
+
+.user-name:before {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	border-radius: 50%;
+	background: url(../../Content/images/system/sprite_adexus.png) -15px -615px no-repeat;
+}
+
+.user-name:after {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 17px;
+	right: 18px;
+	background: url(../../Content/images/system/sprite_adexus.png) -18px -557px no-repeat;
+}
+
+/************************
+*     	MENU            *
+************************/
+
+aside.menu {
+	background: #3c3c3c;
+    width: 300px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 90;
+}
+
+nav.nav {
+	display: block;
+	border-top: 1px solid #222222;
+}
+
+ul.nav-wrap {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+ul.nav-wrap li.nav-01 {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse {
+	display: block;
+	padding: 20px 32px 20px 60px;
+	color: #a4a4a4;
+	position: relative;
+	cursor: pointer;
+	font-size: 13px;
+	border-bottom: 1px solid #222222;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse:hover {
+	color: #fff;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse:before {
+	content: '';
+	display: block;	
+	width: 3px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	background: #ff7800;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse:hover:before {
+	background: #ffb543;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse.active {
+	color: #fff;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse.active:before {
+	background: #ffb543;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse i.ico-collapse {
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 14px;
+	right: 12px;
+	background: url(../../Content/images/system/sprite_adexus.png) -17px -856px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse.active i.ico-collapse {
+	background: url('../../Content/images/system/sprite_adexus.png') -17px -915px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse i.ico {
+	width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    background: green;
+}
+
+
+ul.nav-wrap li.nav-01 span.list-collapse i.ico.home {
+    background: url('../../Content/images/system/sprite_adexus.png') -13px -972px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse:hover i.ico.home {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1032px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse.active i.ico.home {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1032px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse i.ico.notificaciones {
+    background: url('../../Content/images/system/sprite_adexus.png') -13px -1090px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse:hover i.ico.notificaciones {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1150px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse.active i.ico.notificaciones {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1150px no-repeat;
+}
+
+
+ul.nav-wrap li.nav-01 span.list-collapse i.ico.sistema {
+    background: url('../../Content/images/system/sprite_adexus.png') -13px -1212px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse:hover i.ico.sistema {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1272px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse.active i.ico.sistema {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1272px no-repeat;
+}
+
+
+ul.nav-wrap li.nav-01 span.list-collapse i.ico.configuracion {
+    background: url('../../Content/images/system/sprite_adexus.png') -13px -1332px  no-repeat;
+}
+
+ul.nav-wrap li.nav-01 span.list-collapse:hover i.ico.configuracion {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1392px no-repeat;
+}
+
+
+ul.nav-wrap li.nav-01 span.list-collapse.active i.ico.configuracion {
+	background: url('../../Content/images/system/sprite_adexus.png') -13px -1392px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 ul.nav-collapse {
+	display: none;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+	position: relative;
+}
+
+ul.nav-wrap li.nav-01 ul.nav-collapse:before {
+	content: '';
+	display: block;	
+	width: 3px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	background: #ffb543;
+}
+
+ul.nav-wrap li.nav-01 ul.nav-collapse li.nav-02 a {
+	padding: 20px 10px 20px 64px;
+    display: block;
+    color: #c6c6c6;
+    position: relative;
+    font-size: 13px;
+    border-bottom: 1px solid #222222;
+    background: #2e2e2e;
+}
+
+ul.nav-wrap li.nav-01 ul.nav-collapse li.nav-02 a:hover {
+	display: block;
+	color: #ff7e0b;
+}
+
+ul.nav-wrap li.nav-01 ul.nav-collapse li.nav-02 a:before {
+	content: '';
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: url(../../Content/images/system/sprite_adexus.png) -21px -739px no-repeat;
+}
+
+ul.nav-wrap li.nav-01 ul.nav-collapse li.nav-02 a:hover:before {
+	background: url(../../Content/images/system/sprite_adexus.png) -21px -799px no-repeat;
+}
+
+/************************
+*     CUERPO             *
+************************/
+
+.title-main {
+	font-size: 14px;
+	font-weight: 600;
+	color: #363a44;
+	padding: 20px 0px 20px 44px;
+	position: relative;
+	background: white;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(153,153,153,1);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(153,153,153,1);
+	box-shadow: 0px 0px 1px 0px rgba(153,153,153,1);
+}
+
+.title-main:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 21px;
+	left: 18px;
+	background: url(../../Content/images/system/sprite_adexus.png) -21px -679px no-repeat;
+}
+
+.accion-title {
+	position: absolute;
+	top:  14px;
+	right: 12px;
+}
+
+.box-wrap {
+	display: block;
+	clear: both;
+	/*overflow: hidden;*/
+	background: #f8f8f8;
+	border-top: 1px solid #fff;
+	padding: 15px;
+}
+
+.title-main .line-view,
+.title-main .view-active {
+	display: inline-block;
+	padding: 0px 5px 0px 5px;
+}
+
+.title-main .view-active {
+	color: #ffa800;
+}
+
+.sub-title {
+	font-size: 17px;
+	padding: 5px 0px 5px 0px;
+}
+
+
+/*Modal*/
+
+.modal-content {
+    border-top: 3px solid #fff;
+}
+
+.modal-header {
+    background: #fff;
+}
+
+.modal-title {
+    color: #595959 !important;
+}
+
+.close {
+    color: #e96010;
+}
+
+.row-title {
+	display: block;
+	overflow: hidden;
+	padding: 10px 0px 10px 0px;
+}
+
+.sub-title-modal {
+	font-size: 16px;
+}
+
+.box-gris {
+	border: 1px solid #ededed;
+	background: #f6f6f6;
+	padding: 15px 15px 5px 15px;
+}
+
+.form-control {
+    padding: 6px 6px !important;
+}
+
+/*table filtro*/
+
+.table-grilla {
+	background: white;
+}
+
+.table-grilla .table {
+    margin-bottom: 15px;
+}
+
+.table-grilla table.text-center thead tr th,
+.table-grilla table.text-center tbody tr td {
+  text-align: center;
+  font-size: 13px;
+}
+
+.table-grilla .table-bordered {
+    border: 1px solid #e3e3e3;
+}
+
+.table-grilla .table-bordered > thead > tr > th {
+  border: none;
+}
+
+.table-grilla .table-bordered > tbody > tr > td {
+  /*border-bottom: 1px solid #d8e4f5;*/
+  border-left: none;
+  border-right: none;
+  padding: 10px 12px 10px 12px;
+  color: #888;
+}
+
+/*.table-grilla .table-bordered > tbody > tr:hover td {
+  background: #eaf2ff;
+  color: #4997d2;
+}*/
+
+.table-grilla .table-bordered > tbody > tr:nth-child(odd) > td {
+  background: #f8f8f8;
+}
+
+.table-grilla .table-bordered > thead > tr > th {
+  /*border-bottom: 1px solid #d8e4f5;*/
+}
+
+.table-grilla .table > thead > tr > th {
+	padding: 16px 12px 16px 12px;
+	background-color: white !important;
+	color: #6f747f !important;
+}
+
+.table-grilla .table .name {
+	display: block;
+	padding: 0px 0px 0px 22px;
+	position: relative;
+}
+
+.table-grilla .table .name.favorito:before {
+	content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../../Content/images/system/sprite_adexus.png) -22px -319px no-repeat;
+}
+
+.main-content .pagination-grid {
+  display: block;
+  padding: 0px 15px 0px 15px;
+  text-align: right;
+}
+
+.main-content .pagination-grid.int {
+  padding: 0px 0px 0px 0px;
+}
+
+.main-content .pagination-grid .pagination {
+  margin: 0px 0;
+}
+
+.main-content .pagination-grid .pagination li {
+  font-size: 1.2rem;
+  padding: 0px 0px;
+}
+
+.main-content .pagination-grid .pagination li a {
+  color: #787878;
+  border: 1px solid #bebdbd;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.main-content .pagination-grid .pagination li.active a {
+  background: #3c3c3c;
+  border-color: #3c3c3c;
+  color: white;
+}
+
+.etiqueta {
+	text-align: center;
+	font-size: 11px;
+	border: 1px solid #ccc;
+	background: white;
+	padding: 6px 8px 6px 8px;
+	border-radius: 4px;
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+}
+
+.etiqueta.usuario {
+	color: #ffa944;
+	border: 1px solid #ffa944;
+}
+
+.etiqueta.seguridad {
+	color: #67cd4f;
+	border: 1px solid #67cd4f;
+}
+
+.etiqueta.ejecutivo {
+	color: #1ea9cc;
+	border: 1px solid #1ea9cc;
+}
+
+.etiqueta.expositores {
+	color: #d190ef;
+	border: 1px solid #d190ef;
+}
+
+.etiqueta.sponsor {
+	color: #ff5b99;
+	border: 1px solid #ff5b99;
+}
+
+.controls {
+	width: 120px;
+}
+
+.controls .box-2-icon-grid {
+    width: 96px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.controls .control-table {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    margin: 0px 4px 0px 4px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0px;
+    color: #00ade7;
+}
+
+.controls .control-table i {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.controls .control-table i.edit {
+	background: url(../../Content/images/system/sprite_adexus.png) -19px -497px no-repeat;
+}
+
+.controls .control-table i.delete {
+	background: url(../../Content/images/system/sprite_adexus.png) -20px -438px no-repeat;
+}
+
+.controls .control-table i.view {
+	background: url(../../Content/images/system/sprite_adexus.png) -22px -379px no-repeat;
+}
+
+
+.filter-data {
+	display: block;
+	overflow: hidden;
+	padding: 0px 0px 15px 0px;
+}
+
+.filter-data .form-control {
+	margin-right: 10px;
+}
+
+
+.main-content .form-control {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.main-content .form-control:hover {
+  border-color: #a7a7a7;
+  outline: 0;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -moz-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -ms-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -o-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+}
+
+.main-content .form-control:focus {
+  border-color: #a7a7a7;
+  outline: 0;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -moz-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -ms-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -o-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+}
+
+.box-form {
+	display: block;
+	padding: 12px 0px 15px 0px;
+}
+
+.box-form.line-foot {
+	border-bottom: 1px solid #d2d2d2;
+	margin-bottom: 16px;
+	padding: 0px 0px 15px 0px;
+}
+
+.box-form label {
+    color: #5b606b;
+}
+
+.activar-pro {
+	display: block;
+	font-size: 14px;
+    padding: 5px 0px 5px 0px;
+}
+
+.activar-pro input {
+	margin-left: 5px;
+}
+
+.accion-foot {
+	border-top: 1px solid #d2d2d2;
+	text-align: right;
+	padding: 20px 0px 10px 0px;
+	margin-top: 15px;
+}
+
+.user-zone {
+	display: block;
+	min-height: 74px;
+	border-bottom: 1px solid #d2d2d2;
+	padding: 0px 0px 20px 0px;
+	margin-bottom: 15px;	
+}
+
+.user-zone .photo-edit {
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.user-zone .photo-edit .user-photo .photo{
+	width: 52px;
+	height: 52px;
+	display: block;
+	border-radius: 50%;
+	background: #ccc;
+	overflow: hidden;
+}
+
+.user-zone .user-photo {
+    float: left;
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    padding: 0px 50px 0px 0px;
+    position: relative;
+    border: none;
+    background: transparent;
+}
+
+.user-zone .user-photo:after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: url(../../Content/images/system/sprite_adexus.png) -18px -557px no-repeat;
+}
+
+.user-zone .comp-btn-user .dropdown-menu {
+    top: 54px;
+    width: 112px;
+    min-width: inherit;
+}
+
+.user-zone .comp-btn-user .dropdown-menu:before {
+    right: 19px;    
+}
+
+.user-zone .name-usuer {
+	display: block;
+	float: left;
+	min-width: 200px;
+}
+
+.user-zone .name-usuer input {
+	display: block;
+	width: 100%;
+}
+
+.user-zone .name-usuer input.name {
+	font-size: 22px;
+	font-weight: normal;
+	font-family: inherit;
+	background: none;
+	border:none;
+	padding-bottom: 2px;
+}
+
+.user-zone .name-usuer input.apellido {
+	color: #787878;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: inherit;
+	background: none;
+	border:none;
+	padding-bottom: 5px;
+}
+
+.user-zone .user-vip {
+	float: right;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	background: white;
+}
+
+.user-zone .user-vip label {
+	display: block;
+	position: relative;
+	padding: 15px 15px 15px 40px;
+	vertical-align: top;
+	margin-bottom: 0px;
+	cursor: pointer;
+}
+
+.user-zone .user-vip label input {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.user-zone .user-vip label:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+	top: 19px;
+	left: 14px;
+    background: url(../../Content/images/system/sprite_adexus.png) -22px -319px no-repeat;
+}
+
+.expositor {
+	display: table;
+	width: 100%;
+}
+
+.expositor .exp-col {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+
+.expositor .foto-exp {
+	width: 45px;
+}
+
+.expositor .foto-exp .user {
+	width: 30px;
+	height: 30px;
+	display: block;
+	border-radius: 50%;
+	background: #ccc;
+	overflow: hidden;
+}
+
+.expositor .foto-exp .user img{
+	width: 100%;
+}
+
+.expositor .mas-exp {
+	width: 60px;
+	text-align: right;
+}
+
+
+.expositor .mas-exp .btn-exp {
+	display: inline-block;
+	border-radius: 5px;
+	background: white;
+	border: 1px solid #bfbfbf;
+	padding: 3px 5px 3px 5px;
+	color: #1488ff;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.expositor .mas-exp.comp-btn-user .dropdown-menu {
+    top: 36px;
+    width: 210px;
+}
+
+.expositor .mas-exp.comp-btn-user .dropdown-menu:before {
+    right: 14px;
+}
+
+.expositor .mas-exp.comp-btn-user .dropdown-menu li {
+	padding: 8px;
+}
+
+.expositor .mas-exp.comp-btn-user .dropdown-menu li:nth-child(odd) {
+	border-bottom: 1px solid #cccccc;
+}
+
+.expositor .item-exp-drop {
+	display: table;
+	width: 100%;
+}
+
+.expositor .item-exp-drop .img-exp,
+.expositor .item-exp-drop .name-exp {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+.expositor .item-exp-drop .img-exp {
+	width: 40px;
+}
+
+.expositor .item-exp-drop .img-exp span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.expositor .item-exp-drop .img-exp span img {
+	width: 100%;
+}
+
+.estado {
+	display: block;
+	padding: 0px 0px 0px 22px;
+	position: relative;
+}
+
+.estado:before {
+	content: '';
+	background: red;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.estado.activo {
+	color: #67cd4f;
+}
+
+.estado.activo:before {
+	    background: url(../../Content/images/system/sprite_adexus.png) -24px -1460px no-repeat;
+}
+
+.estado.inactivo:before {
+	    background: url(../../Content/images/system/sprite_adexus.png) -24px -1520px no-repeat;
+}
+
+.etiqueta-participante {
+	display: block;
+	padding: 0px 0px 0px 0px;
+}
+
+.etiqueta-participante .label-etiqueta {
+	padding: 0px 40px 0px 0px;
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+}
+
+.etiqueta-participante .label-etiqueta input {
+	margin-right: 5px;
+}
+
+
+.etiqueta-participante .label-etiqueta.sponsor {
+	color: #e8709d;
+}
+
+.etiqueta-participante .label-etiqueta.expositores {
+	color: #bd6de2;	
+}
+
+.etiqueta-participante .label-etiqueta.ejecutivo {
+	color: #1ea9cc;	
+}
+
+.etiqueta-participante .label-etiqueta.seguridad {
+	color: #67cd4f;
+}
+
+.etiqueta-participante .label-etiqueta.usuario {
+	color: #ffa944;
+}
+
+/*----Login*/
+/*******************************/
+
+.bg-body-login {
+	background: url('../../Content/images/system/bg_body_login.jpg') 0px 0px no-repeat;
+}
+
+.box-login {
+	text-align: center;
+	display: block;
+	padding: 140px 0px 0px 0px;
+}
+
+.box-login .wrap-login {
+	width: 482px;    
+    margin: 0px auto;
+}
+
+.wrap-login .form-login {
+	background: url('../../Content/images/system/bg-login.png') 0px 0px repeat;
+}
+
+.wrap-login .form-login .form-login-header {
+	background: #1b1b1b;
+	text-transform: uppercase;
+	padding: 19px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px 4px 0px 0px;
+	font-size: 15px;
+}
+
+.wrap-login .form-login .form-login-body {
+	padding: 25px 0px 0px 0px;
+	text-align: left;
+	width: 300px;
+	margin: 0px auto;
+}
+
+.wrap-login .form-login .form-login-footer {
+	border-top: 1px solid #2e2d2d;
+	padding: 12px 0px 12px 0px;
+}
+
+
+.wrap-login .logo-solo-login {
+	padding: 0px 0px 20px 0px;
+}
+
+.wrap-login .input-group-addon {
+	padding: 6px 0px 6px 12px;
+    border-top: 1px solid #014e94;
+    border-left: 1px solid #014e94;
+    border-bottom: 1px solid #014e94;
+    border-right: none;
+    background: #2b99cb;
+}
+
+.wrap-login .input-group:hover .input-group-addon {
+
+}
+
+.wrap-login .ico-user-login i {
+	position: static;
+	top:  0px;
+	left: 0px;
+	width: 22px;
+	height: 22px;
+}
+
+.wrap-login .form-control {
+	background: #525252;
+	color: white;
+	padding: 8px 12px;
+	border: 1px solid #6c6c6c;
+}
+
+.form-login-body ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #e0e0e0;
+}
+.form-login-body :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #e0e0e0;
+   opacity:  1;
+}
+.form-login-body ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #e0e0e0;
+   opacity:  1;
+}
+.form-login-body :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #e0e0e0;
+}
+
+.form-login-body label {
+	color: #fff;
+	font-size: 12px;
+}
+
+.olv-contrasena {
+	display: block;
+}
+
+.olv-contrasena a {
+	display: block;
+	padding: 10px 0px 25px 0px;
+	color: #777777;
+}
+
+.btn-ingresar {
+	height: 34px;
+	background: #e96010;
+	color: white;
+	padding: 0px 22px 0px 22px;
+	border-radius: 4px;
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+	border: 1px solid #ff892a;
+}
+
+.btn-ingresar:hover {
+	
+}
+
+.zone {
+	padding: 0px 0px 20px 0px;
+}
+
+.form-table {
+	display: table;
+	width: 100%;
+}
+
+.form-table .item-table{
+	display: table-cell;
+	text-align: center;
+}
+
+.form-table .item-table.line-zone {
+	padding: 0px 5px 0px 5px;
+}
+
+.form-table .item-table.dos {
+	width: 20%;
+}
+
+.form-table .item-table.tres {
+	width: 30%;
+}
+
+.form-table.horario {
+	display: table;
+	width: inherit;
+}
+
+.form-table .item-table.horario {
+	width: 60px;
+}
+
+.form-table .item-table.line-h {
+	width: 20px;
+}
+
+.inline-form {
+	display: table;
+	width: 100%;
+}
+
+.inline-form .inline-form-item {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.item01 {
+	width: 25px;
+}
+
+.search:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 22px;
+	top: 6px;
+	background: url(../../Content/images/system/sprite_adexus.png) -22px -379px no-repeat;
+}
+
+/*******************************
+*    FOOTER  *
+*******************************/
+
+.footer {
+	height: 52px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: #262626;
+	z-index: 150;
+	font-size: 12px;
+	color: #fff;
+}
+
+.footer .copyright {
+	padding: 18px 0px 0px 15px;
+}
+
+.footer .copyright span {
+	color: #ff7800;
+}
+
+
+.footer .pull-right .by {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer .date {
+	padding: 18px 0px 0px 0px;
+}
+
+.footer .gmd {
+    height: 30px;
+    width: 50px;
+    margin: 12px 15px 0px 0px;
+    padding: 0px 0px 0px 10px;
+    background: url('../../Content/images/system/logo-gmd.png') 10px center no-repeat;
+}
+
+/*******************************
+*    SCROLL CUSTOM   *
+*******************************/
+
+/*.colum-bandeja .mCSB_outside + .mCSB_scrollTools {
+	right: 0px;
+}
+
+.inbox-folder .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: #0066b1;
+}
+
+.inbox-folder .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #041020;
+}
+
+.inbox .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: #a7a7a7;
+}
+*/
+
+
+.btn-descarga {
+	min-width: 94px;
+	height: 34px;
+	color: #787878;
+	padding: 0px 15px 0px 15px;
+	margin-left: 8px;
+	border-radius: 4px;
+	border: 1px solid #bebdbd;
+	background: white;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+}
+
+.btn-descarga:hover {
+	
+}
+
+.btn-cargar {
+	min-width: 94px;
+	height: 34px;
+	background: #3c3c3c;
+	color: white;
+	padding: 0px 15px 0px 15px;
+	margin-left: 8px;
+	border-radius: 4px;
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+}
+
+.btn-cargar:hover {
+	
+}
+
+.btn-search {
+	height: 34px;
+	background: #969696;
+	color: white;
+	padding: 0px 15px 0px 15px;
+	border-radius: 4px;
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+}
+
+.btn-search:hover {
+	
+}
+
+.btn-agregar {
+	height: 34px;
+	background: #e96010;
+	color: white;
+	padding: 0px 15px 0px 15px;
+	border-radius: 4px;
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+}
+
+.btn-agregar:hover {
+	
+}
+
+.btn-agregar span {
+	font-size: 14px;
+}
+
+.btn-volver {
+	min-width: 94px;
+	height: 34px;
+	color: #787878;
+	padding: 0px 15px 0px 35px;
+	margin-left: 8px;
+	border-radius: 4px;
+	border: 1px solid #bebdbd;
+	background: white;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+	position: relative;
+}
+
+.btn-volver:before {
+	content: '';
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	background: url(../../Content/images/system/sprite_adexus.png) -21px -139px no-repeat;
+}
+
+.btn-volver:hover {
+	
+}
+
+.btn-cancelar {
+	height: 34px;
+	background: #969696;
+	color: white;
+	padding: 0px 15px 0px 15px;
+	margin-left: 8px;
+	border-radius: 4px;
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+}
+
+.btn-cancelar:hover {
+	
+}
+
+.btn-guardar {
+	height: 34px;
+	background: #e96010;
+	color: white;
+	padding: 0px 15px 0px 15px;
+	margin-left: 8px;
+	border-radius: 4px;
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	outline: none;
+}
+
+.btn-guardar:hover {
+	
+}
+
+/*----.comp-btn-user*/
+/*******************************/
+
+.comp-btn-user .btn{
+	height: 51px;
+	border: none;
+	background: transparent;
+	font-size:12px;
+	color:#969696;
+	line-height: 34px;
+	padding:6px 12px;
+	font-weight: normal;
+	text-transform:inherit;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+
+.comp-btn-user .btn .caret{
+	margin-left:4px;
+	border-top:4px solid #c8c8c8;
+}
+
+.comp-btn-user.open .btn, .comp-btn-user .btn:hover{
+	color:#626262;
+}
+
+.comp-btn-user.open .caret, .comp-btn-user .btn:hover .caret{
+	border-top:4px solid #999;
+}
+
+.comp-btn-user .btn img{
+	position: relative;
+	top: -2px;
+	margin-right: 5px;
+	border:1px solid #d0d0d0;
+}
+
+.comp-btn-user .dropdown-menu {
+	padding:0px;
+	top: 60px;
+	width: 144px;
+	margin:0px;
+	-webkit-box-shadow: 5px 5px rgba(44, 53, 66, 0.2);
+	box-shadow: 5px 5px rgba(44, 53, 66, 0.2);
+	-moz-box-shadow: 5px 5px rgba(44, 53, 66, 0.2);
+}
+
+.comp-btn-user .dropdown-menu li.first,
+.comp-btn-user .dropdown-menu li.first2{
+	padding: 10px 0px 10px 0px;
+}
+
+.comp-btn-user .dropdown-menu li.first span {
+	padding: 3px 18px 3px 18px;
+	display: block;
+	font-size: 13px;
+}
+
+.comp-btn-user .dropdown-menu li.first span.name-company {
+	color: #0566ae;
+}
+
+.comp-btn-user .dropdown-menu li.first span.name-user span {
+	color: #cc0641;
+	display: inline;
+	padding: 0px;
+}
+
+.comp-btn-user .dropdown-menu li.first span.date-company {
+	color: #9f9f9f;
+}
+
+.comp-btn-user .first a {
+	border:none;
+}
+
+.comp-btn-filter .first a {
+	border:none;
+}
+
+.comp-btn-carpeta .first a {
+	border:none;
+}
+
+.comp-btn-user .dropdown-menu:before{
+	content:'';
+	background:url('../images/system/arrow.png') no-repeat;
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	right: 19px;
+	top: -9px;
+}
+
+.comp-btn-user a {
+	padding: 13px 20px !important;
+	display: block;
+	color: #8c9399!important;
+	font-size: 12px;
+}
+
+.comp-btn-user a:hover{
+	color: #8c9399!important;
+	background:#f1faff!important;
+}

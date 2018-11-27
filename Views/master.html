@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>.:: Adexus ::.</title>
+	<link href="../Content/css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../Scripts/modernizr/modernizr.custom.js"></script>
+	<!--[if lt IE 9]>		
+		<script src="../Scripts/app/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- nav -->
+<aside class="menu">
+	<a class="logo" href="#" >
+
+	</a>
+	<nav class="nav">
+		<ul class="nav-wrap">
+			<li class="nav-01">
+				<span class="list-collapse">Participantes
+					<i class="ico home"></i> 
+					<i class="ico-collapse"></i>
+				</span>
+				<ul class="nav-collapse">
+					<li class="nav-02">
+						<a href="notificacion.html" class="nav_ajx">Notificaciones</a>
+					</li>
+					<li class="nav-02">
+						<a href="charlas-listado.html" class="nav_ajx">Charlas</a>
+					</li>
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 03</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-01">
+				<span class="list-collapse">Registro de notificaciones
+					<i class="ico notificaciones"></i> 
+					<i class="ico-collapse"></i>
+				</span>
+				<ul class="nav-collapse">
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 01</a>
+					</li>
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 02</a>
+					</li>
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 03</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-01">
+				<span class="list-collapse">Opciones del sistema
+					<i class="ico sistema"></i>
+					<i class="ico-collapse"></i>
+				</span>
+				<ul class="nav-collapse">
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 01</a>
+					</li>
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 02</a>
+					</li>
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 03</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-01">
+				<span class="list-collapse">Mantenimientos
+					<i class="ico configuracion"></i>
+					<i class="ico-collapse"></i>
+				</span>
+				<ul class="nav-collapse">
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 01</a>
+					</li>
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 02</a>
+					</li>
+					<li class="nav-02">
+						<a href="#" class="nav_ajx">Sub menu 03</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</aside>
+<!-- cierra nav -->
+<section class="wrap-content">
+	<div class="line-corp"></div>
+	<!--<header>-->
+	<header class="header">
+		<div class="pull-left">
+			<a class="btn-show"></a>
+		</div>
+		<div class="pull-left corporativo">
+			<div class="logo-app"></div>
+		</div>
+		<div class="pull-right comp-btn-user">
+			<button id="btnGroupDrop2" type="button" class="user-name dropdown-toggle" data-toggle="dropdown">
+				Jesus Yauri
+			</button>
+			<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="btnGroupDrop2">
+				<li><a href="#">Cerrar Sesion</a></li>
+			</ul>
+		</div>
+	</header>
+	<!--</header>-->
+	<!--<pull-main-content>-->
+	<div class="pull-main-content">
+		<!--<main-content>-->
+		<div class="main-content view-wrap">
+			
+		</div>
+		<!--</main-content>-->
+	</div>
+	<!--</pull-main-content>-->
+</section>
+<footer class="footer">
+	<div class="pull-left copyright">
+		<span>Todos los derechos reservados </span>ADEXUS DAY copyright 2017
+	</div>
+	<div class="pull-right">
+		<span class="date by">Powered by</span>
+		<a href="http://www.gmd.com.pe/portal/" class="gmd by" title="GMD" target="_blank"></a>
+	</div>
+</footer>
+
+<!-- Modal agregar -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Agregar una charla</h4>
+      </div>
+      <div class="modal-body">
+	      	<div class="row">
+		  		<div class="col-sm-12">
+		  			<div class="form-group">
+		  				<label>Nombre de la charla:</label>
+		  				<input type="text" name="value" class="form-control">
+		  			</div>
+		  		</div>
+		  	</div>
+		  	<div class="row">
+		  		<div class="col-sm-12">
+		  			<div class="form-group">
+		  				<label>Información:</label>
+		  				<textarea class="form-control" rows="2"></textarea>
+		  			</div>
+		  		</div>
+		  	</div>
+      		<div class="row">
+		  		<div class="col-sm-6">
+		  			<div class="form-group">
+		  				<label>Foto portada:</label>
+		  				<input type="text" name="value" class="form-control" value="Gerente de Innovación">
+		  			</div>
+		  		</div>
+		  		<div class="col-sm-6">
+		  			<div class="form-group">
+		  				<label>Cupos (Usuarios):</label>
+		  				<select name="" class="form-control">
+							<option>Seleccionar</option>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+						</select>
+		  			</div>
+		  		</div>
+		  	</div>
+		  	<div class="row">
+		  		<div class="col-sm-6">
+		  			<div class="form-group">
+		  				<label>Horario:</label>
+		  				<div class="form-table">
+		  					<div class="item-table dos">
+		  						<select name="" class="form-control">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+								</select>
+		  					</div>
+		  					<div class="item-table line-zone">:</div>
+		  					<div class="item-table dos">
+		  						<select name="" class="form-control">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+								</select>
+		  					</div>
+		  					<div class="item-table line-zone">-</div>
+		  					<div class="item-table dos">
+		  						<select name="" class="form-control">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+								</select>
+		  					</div>
+		  					<div class="item-table line-zone">:</div>
+		  					<div class="item-table dos">
+		  						<select name="" class="form-control">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+								</select>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="col-sm-6">
+		  			<div class="form-group">
+		  				<label>Ubicación:</label>
+		  				<select name="" class="form-control">
+							<option>Seleccionar</option>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+						</select>
+		  			</div>
+		  		</div>
+		  	</div>
+		  	<div class="row-title">
+		  		<div class="pull-left">
+		  			<label class="sub-title-modal">Expositores</label>
+		  		</div>
+		  		<div class="pull-right">
+		  			<div class="form-inline">
+					  <div class="form-group">
+					    <label for="exampleInputName2">Número de expositores:</label>
+					    <select name="" class="form-control">
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+						</select>
+					  </div>
+					</div>
+		  		</div>
+		  	</div>
+		  	<div class="box-gris">
+		  		<div class="row">
+			  		<div class="col-sm-12">
+			  			<div class="form-group">
+			  				<select name="" class="form-control">
+								<option>Seleccionar expositor</option>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+							</select>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div class="row">
+			  		<div class="col-sm-12">
+			  			<div class="form-group">
+			  				<select name="" class="form-control">
+								<option>Seleccionar expositor</option>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+							</select>
+			  			</div>
+			  		</div>
+			  	</div>
+		  	</div>
+      </div>
+      <div class="modal-footer">
+		<button type="submit" class="btn-cancelar">
+			Cancelar
+		</button>
+		<button type="submit" class="btn-guardar">
+			Guardar
+		</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cierra modal agregar -->
+
+<!-- Modal agregar participante -->
+<div class="modal fade" id="detalleUsuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Agregar ejecutivo a cuentas</h4>
+      </div>
+      <div class="modal-body">
+	      	<div class="row">
+		  		<div class="col-sm-12">
+		  			<div class="form-group search">
+		  				<input type="text" name="value" class="form-control" placeholder="Buscar ejecutivo de cuentas">
+		  			</div>
+		  		</div>
+		  	</div>
+		  	<div class="table-grilla">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class="text-center"></th>
+							<th>Nombre</th>
+							<th>Apellidos</th>
+							<th>Tipo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-center">
+								<label><input type="checkbox" name=""></label>
+							</td>
+							<td>
+								Diego Armando
+							</td>
+							<td>Guadalupe Culqui</td>
+							<td><span class="etiqueta ejecutivo">Ejecutivo comercial</span></td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<label><input type="checkbox" name=""></label>
+							</td>
+							<td>
+								Diego Armando
+							</td>
+							<td>Guadalupe Culqui</td>
+							<td><span class="etiqueta ejecutivo">Ejecutivo comercial</span></td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<label><input type="checkbox" name=""></label>
+							</td>
+							<td>
+								Diego Armando
+							</td>
+							<td>Guadalupe Culqui</td>
+							<td><span class="etiqueta ejecutivo">Ejecutivo comercial</span></td>
+						</tr>			
+					</tbody>
+				</table>
+			</div>
+      </div>
+      <div class="modal-footer">
+		<button type="submit" class="btn-cancelar">
+			Cancelar
+		</button>
+		<button type="submit" class="btn-guardar">
+			Agregar
+		</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cierra modal agregar participante -->
+
+	<!--JS-->
+	<script type="text/javascript" src="../Scripts/jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../Scripts/app/ajax.navegacion.js"></script>
+	<script type="text/javascript" src="../Scripts/bootstrap-jquery-ui/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../Scripts/app/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="../Scripts/app/common.js"></script>
+	<script type="text/javascript">
+		$(function(){			
+			generales();
+		});
+	</script>
+</body>						
+</html>
